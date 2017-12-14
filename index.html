@@ -5,6 +5,7 @@
     <title>Inside Window</title>
     <link rel="stylesheet" href="style.css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="slick-1.8.0/slick/slick.css">
 </head>
 <body>
     <div class="header">
@@ -25,6 +26,7 @@
         </div>
     </div>
     <div class="menu">
+<<<<<<< HEAD
         <div class="container">
             <ul class="menu-list">
                 <li class="element"><a href="#" class="elem">ГЛАВНАЯ</a></li>
@@ -39,14 +41,99 @@
                 <li id="st" class="element"><a href="#" id="search"><img src="images/search.png" alt="search"></a></li>
             </ul>
         </div>
+=======
+           <div class="container">
+                <ul class="menu-list">
+                    <li class="element"><a href="#" class="elem">ГЛАВНАЯ</a></li>
+                    <li class="element"><a href="#" class="elem">ПРОДУКЦИЯ</a></li>
+                    <li class="element"><a href="#" class="elem">НАШИ УСЛУГИ</a></li>
+                    <li class="element"><a href="#" class="elem">КРЕДИТ</a></li>
+                    <li class="element"><a href="#" class="elem">АКЦИИ</a></li>
+                    <li class="element"><a href="#" class="elem">НОВОСТИ</a></li>
+                    <li class="element"><a href="#" class="elem">ДОСТАВКА</a></li>
+                    <li class="element"><a href="#" class="elem">ОПЛАТА</a></li>
+                    <li class="element"><a href="#" class="elem">КОНТАКТЫ</a></li>
+                    <li class="element"><a href="#" id="search"><img src="images/search.png" alt="search"></a></li>
+                </ul>
+           </div>
+>>>>>>> 4cbbffde458e44fdf8a2a68e8acb2ad926f82d44
     </div>
     <div class="set">
         <div class="container">
             <div class="set_window">
-                <h6>УСТАНОВКА И ДОСТАВКА ОКОН ОТ ПРОИЗВОДИТЕЛЯ</h6>
-                <P>Равным образом укрепление и развитие структуры играет важную роль в формир овании дальнейших направлений развития. Богатый опыт консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</P>
+               <div class="mySlider">
+                   <div class="pads">
+                       <h6>УСТАНОВКА И ДОСТАВКА ОКОН ОТ ПРОИЗВОДИТЕЛЯ</h6>
+                       <P>Равным образом укрепление и развитие структуры играет важную роль в формир овании дальнейших направлений развития. Богатый опыт консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</P>
+                   </div>
+                   <div class="pads">
+                       <h6>УСТАНОВКА И ДОСТАВКА ОКОН ОТ ПРОИЗВОДИТЕЛЯ</h6>
+                       <P>Равным образом укрепление и развитие структуры играет важную роль в формир овании дальнейших направлений развития. Богатый опыт консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</P>
+                   </div>
+                   <div class="pads">
+                       <h6>УСТАНОВКА И ДОСТАВКА ОКОН ОТ ПРОИЗВОДИТЕЛЯ</h6>
+                       <P>Равным образом укрепление и развитие структуры играет важную роль в формир овании дальнейших направлений развития. Богатый опыт консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</P>
+                   </div>
+                   <div class="pads">
+                       <h6>УСТАНОВКА И ДОСТАВКА ОКОН ОТ ПРОИЗВОДИТЕЛЯ</h6>
+                       <P>Равным образом укрепление и развитие структуры играет важную роль в формир овании дальнейших направлений развития. Богатый опыт консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании форм развития.</P>
+                   </div>
+               </div>
             </div>
         </div>
     </div>
+    <div class="how_to">
+       <div class="container">
+            <div class="foto">
+                <span id="horizontal_line"></span>
+                <span id="vertical_line"></span>
+            </div>
+            <div class="description">
+                <h5 class="ordering">КАК СДЕЛАТЬ ЗАКАЗ?</h5>
+                <div class="images">
+                    <div class="convert">
+                        <div class="point_order">
+                            <img src="images/window.png" alt="green_window" id="window">
+                            <p class="order_text">Выберите параметры окна</p>
+                        </div>
+                    </div>
+                    <div class="convert">
+                        <div class="point_order">
+                            <img src="images/truck.png" alt="green_car" id="car">
+                            <p class="order_text">Выберите способ доставки</p>
+                        </div>
+                    </div>
+                    <div class="convert">
+                        <div class="point_order">
+                            <img src="images/box.png" alt="gray-box" id="box">
+                            <p class="order_text">Получите свой заказ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="slick-1.8.0/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.mySlider').slick({
+    //                autoplay: true,
+                arrows: true,
+                dots: true,
+                prevArrow: "<button class='slick-arrow-left'><span class='arrow-left'>&#60;</span></button>",
+                nextArrow: "<button class='slick-arrow-right'><span class='arrow-right'>&#62;</span></button>",
+                slidesToShow: 1,
+                responsive: [
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        })
+    </script>
 </body>
 </html>
