@@ -64,38 +64,44 @@
   background-color: #41ac21; }
 
 .menu-list {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 48px;
+  overflow: hidden;
+  line-height: 48px; }
 
 .element {
-  display: inline-block;
   list-style: none;
-  font-size: 18px;
-  box-sizing: border-box;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box; }
+  border-right: 1px solid rgba(255, 255, 255, 0.3); }
   .element:first-child {
     border-left: 1px solid rgba(255, 255, 255, 0.3);
     border-right: 1px solid rgba(255, 255, 255, 0.3); }
   .element:hover {
     background-color: white; }
+  .element:last-child:hover {
+    background-color: #41ac21; }
   .element:hover .elem {
     color: #43aa26; }
 
 .elem {
   text-decoration: none;
   color: white;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  padding-left: 14px;
+  padding-left: 18px;
   padding-right: 15px;
-  line-height: 48px; }
+  font-size: 18px;
+  display: block; }
 
 #search {
   padding-right: 10px;
   padding-left: 10px;
   line-height: 48px; }
+  #search img {
+    vertical-align: middle; }
 
 .set {
-  background-image: url(images/set.png); }
+  background-image: url(../images/set.png); }
 
 /*# sourceMappingURL=style.css.map */

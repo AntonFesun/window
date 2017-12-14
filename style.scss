@@ -97,16 +97,18 @@ $fs: 26px;
 
 .menu-list {
     box-sizing: border-box;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 48px;
+    overflow: hidden;
+    line-height: 48px;
 }
 
 .element {
-    display: inline-block;
     list-style: none;
-    font-size: 18px;
-    box-sizing: border-box;
     border-right: 1px solid rgba(255, 255, 255, 0.3);
-    box-sizing: border-box;
-    
     &:first-child {
         border-left: 1px solid rgba(255, 255, 255, 0.3);
         border-right: 1px solid rgba(255, 255, 255, 0.3);
@@ -114,6 +116,12 @@ $fs: 26px;
     
     &:hover {
         background-color: white;
+    }
+    
+    &:last-child {
+        &:hover {
+            background-color: $but_back;
+        }
     }
     
     &:hover .elem {
@@ -124,19 +132,22 @@ $fs: 26px;
 .elem {
     text-decoration: none;
     color: white;
-    padding-top: 17px;
-    padding-bottom: 15px;
-    padding-left: 14px;
+    padding-left: 18px;
     padding-right: 15px;
-    line-height: 48px;
+    font-size: 18px;
+    display: block;
 }
 
 #search {
     padding-right: 10px;
     padding-left: 10px;
     line-height: 48px;
+    
+    img {
+        vertical-align: middle;
+    }
 }
 
 .set {
-    background-image: url(images/set.png);
+    background-image: url(../images/set.png);
 }
