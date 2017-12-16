@@ -250,28 +250,6 @@ $fs: 26px;
     top: -1px;
 }
 
-.description {
-    background-color: white;
-    margin-left: 482px;
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-.ordering {
-    font-family: $ff1;
-    color: $fc3;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 90px;
-}
-
-.convert {
-    float: left;
-}
-
 #window {
 
 }
@@ -379,6 +357,30 @@ $fs: 26px;
 //    }
 }
 
+.description {
+    background-color: white;
+    margin-left: 482px;
+    position: relative;
+    top: -40px;
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.ordering {
+    font-family: $ff1;
+    color: $fc3;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: center;
+}
+
+.convert {
+    float: left;
+}
 
 .point_order {
     text-align: center;
@@ -388,8 +390,11 @@ $fs: 26px;
 }
 
 .image-container {
-    line-height: 233px;
+    line-height: 184px;
+    width: 100px;
+    margin: 0 auto;
 }
+
 .how_to {
     background-image: url(../images/Rectangle%208.png);
 }
@@ -398,25 +403,22 @@ $fs: 26px;
     text-align: center;
 }
 
-.gr_ar {
-    margin-left: -20px;
+.img {
+    margin-top: 36px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.gr_ar {
+    margin-left: -20px;
+    margin-bottom: 38px;
+}
 
 .img {
     font-size: 0;
+}
+
+.order_text {
+    font-family: $ff1;
+    font-size: 14px;
+    font-weight: 400;
+    color: $fc3;
 }

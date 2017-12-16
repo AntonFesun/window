@@ -187,24 +187,6 @@
   left: -2px;
   top: -1px; }
 
-.description {
-  background-color: white;
-  margin-left: 482px; }
-  .description::after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.ordering {
-  font-family: Roboto, sans-serif;
-  color: #2f3031;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 90px; }
-
-.convert {
-  float: left; }
-
 .mar {
   padding-left: 65px; }
 
@@ -267,13 +249,36 @@
   .set_window .slick-arrow:hover .arrow-right {
     color: white; }
 
+.description {
+  background-color: white;
+  margin-left: 482px;
+  position: relative;
+  top: -40px; }
+  .description::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.ordering {
+  font-family: Roboto, sans-serif;
+  color: #2f3031;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 90px;
+  text-align: center; }
+
+.convert {
+  float: left; }
+
 .point_order {
   text-align: center; }
   .point_order img {
     vertical-align: middle; }
 
 .image-container {
-  line-height: 233px; }
+  line-height: 184px;
+  width: 100px;
+  margin: 0 auto; }
 
 .how_to {
   background-image: url(../images/Rectangle%208.png); }
@@ -281,10 +286,20 @@
 .head-container {
   text-align: center; }
 
+.img {
+  margin-top: 36px; }
+
 .gr_ar {
-  margin-left: -20px; }
+  margin-left: -20px;
+  margin-bottom: 38px; }
 
 .img {
   font-size: 0; }
+
+.order_text {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2f3031; }
 
 /*# sourceMappingURL=style.css.map */
