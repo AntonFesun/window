@@ -21,6 +21,12 @@ $fs: 26px;
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
+    
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .header {
@@ -136,10 +142,7 @@ $fs: 26px;
     padding-left: 18px;
     padding-right: 15px;
     font-size: 18px;
-<<<<<<< HEAD
-=======
     line-height: 48px;
->>>>>>> 4cbbffde458e44fdf8a2a68e8acb2ad926f82d44
     display: block;
 }
 
@@ -155,9 +158,6 @@ $fs: 26px;
 
 .set {
     background-image: url(../images/set.png);
-<<<<<<< HEAD
-}
-=======
     height: 500px;
 }
 
@@ -226,7 +226,7 @@ $fs: 26px;
     width: 482px;
     height: 368px;
     margin-top: -91px;
-    position: absolute;
+    position: relative;
     float: left;
 }
 
@@ -251,8 +251,9 @@ $fs: 26px;
 }
 
 .description {
-    width: 690px;
-    display: inline-block;
+    background-color: white;
+    margin-left: 482px;
+    margin-top: -40px;
     &::after {
         content: "";
         display: table;
@@ -265,6 +266,7 @@ $fs: 26px;
     color: $fc3;
     font-size: 36px;
     font-weight: 700;
+    line-height: 90px;
 }
 
 .convert {
@@ -272,19 +274,22 @@ $fs: 26px;
 }
 
 #window {
-    margin-bottom: 33px;
+
 }
 
 #car {
-    margin-bottom: 57px;
+
 }
 
 #box {
-    margin-bottom: 61px;
+
+}
+
+.mar {
+    padding-left: 65px;
 }
 
 .images {
-    padding-left: 65px;
     &::after {
         content: "";
         clear: both;
@@ -323,7 +328,7 @@ $fs: 26px;
     border: none;
     width: 26px;
     height: 26px;
-    background-color: #41ac21;
+    background-color: white;
     position: absolute;
     color: #fff;
     transform: rotate(45deg);
@@ -331,19 +336,34 @@ $fs: 26px;
     transform-origin: 13px 6px;
     top: calc(50% - 26px);
     &.slick-arrow-left {
-         left: -38px;
+        left: -38px;
     }
-    &.slick-arrow-right{
-        right: -38px;
+    &.slick-arrow-right {
+        right: -49px;
     }
-    .arrow-right{
+    .arrow-right {
         display: block;
         transform: rotate(-45deg);
         height: 26px;
+        color: black;
     }
+    .arrow-left {
+        display: block;
+        transform: rotate(-45deg);
+        height: 29px;
+        color: black;
+    }
+        
     &:hover {
-        background-color: white;
+        background-color: #41ac21;
     }
+        &:hover .arrow-left {
+            color: white;
+        }
+        
+        &:hover .arrow-right {
+            color: white;
+        }
     }
 }
 .arrow-slide {
@@ -361,17 +381,21 @@ $fs: 26px;
 }
 
 
+.point_order {
+    height: 227px;
+    text-align: center;
+    img {
+        vertical-align: middle;
+    }
+}
 
+.image-container {
+    line-height: 233px;
+}
+.how_to {
+    background-image: url(../images/Rectangle%208.png);
+}
 
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 4cbbffde458e44fdf8a2a68e8acb2ad926f82d44
+.head-container {
+    margin: 0 auto;
+}

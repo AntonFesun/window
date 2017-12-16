@@ -8,6 +8,10 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative; }
+  .container::after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .header {
   width: 100%; }
@@ -93,10 +97,7 @@
   padding-left: 18px;
   padding-right: 15px;
   font-size: 18px;
-<<<<<<< HEAD
-=======
   line-height: 48px;
->>>>>>> 4cbbffde458e44fdf8a2a68e8acb2ad926f82d44
   display: block; }
 
 #search {
@@ -107,9 +108,6 @@
     vertical-align: middle; }
 
 .set {
-<<<<<<< HEAD
-  background-image: url(../images/set.png); }
-=======
   background-image: url(../images/set.png);
   height: 500px; }
 
@@ -168,7 +166,7 @@
   width: 482px;
   height: 368px;
   margin-top: -91px;
-  position: absolute;
+  position: relative;
   float: left; }
 
 #horizontal_line {
@@ -190,8 +188,9 @@
   top: -1px; }
 
 .description {
-  width: 690px;
-  display: inline-block; }
+  background-color: white;
+  margin-left: 482px;
+  margin-top: -40px; }
   .description::after {
     content: "";
     display: table;
@@ -201,26 +200,19 @@
   font-family: Roboto, sans-serif;
   color: #2f3031;
   font-size: 36px;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 90px; }
 
 .convert {
   float: left; }
 
-#window {
-  margin-bottom: 33px; }
-
-#car {
-  margin-bottom: 57px; }
-
-#box {
-  margin-bottom: 61px; }
-
-.images {
+.mar {
   padding-left: 65px; }
-  .images::after {
-    content: "";
-    clear: both;
-    display: table; }
+
+.images::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 .set_window .slick-dots {
   text-align: center;
@@ -248,7 +240,7 @@
   border: none;
   width: 26px;
   height: 26px;
-  background-color: #41ac21;
+  background-color: white;
   position: absolute;
   color: #fff;
   transform: rotate(45deg);
@@ -258,13 +250,37 @@
   .set_window .slick-arrow.slick-arrow-left {
     left: -38px; }
   .set_window .slick-arrow.slick-arrow-right {
-    right: -38px; }
+    right: -49px; }
   .set_window .slick-arrow .arrow-right {
     display: block;
     transform: rotate(-45deg);
-    height: 26px; }
+    height: 26px;
+    color: black; }
+  .set_window .slick-arrow .arrow-left {
+    display: block;
+    transform: rotate(-45deg);
+    height: 29px;
+    color: black; }
   .set_window .slick-arrow:hover {
-    background-color: white; }
->>>>>>> 4cbbffde458e44fdf8a2a68e8acb2ad926f82d44
+    background-color: #41ac21; }
+  .set_window .slick-arrow:hover .arrow-left {
+    color: white; }
+  .set_window .slick-arrow:hover .arrow-right {
+    color: white; }
+
+.point_order {
+  height: 227px;
+  text-align: center; }
+  .point_order img {
+    vertical-align: middle; }
+
+.image-container {
+  line-height: 233px; }
+
+.how_to {
+  background-image: url(../images/Rectangle%208.png); }
+
+.head-container {
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
