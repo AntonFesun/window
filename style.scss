@@ -253,7 +253,6 @@ $fs: 26px;
 .description {
     background-color: white;
     margin-left: 482px;
-    margin-top: -40px;
     &::after {
         content: "";
         display: table;
@@ -382,7 +381,6 @@ $fs: 26px;
 
 
 .point_order {
-    height: 227px;
     text-align: center;
     img {
         vertical-align: middle;
@@ -397,5 +395,28 @@ $fs: 26px;
 }
 
 .head-container {
-    margin: 0 auto;
+    text-align: center;
+}
+
+.gr_ar {
+    margin-left: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img {
+    font-size: 0;
 }
