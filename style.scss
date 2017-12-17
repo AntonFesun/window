@@ -262,10 +262,6 @@ $fs: 26px;
 
 }
 
-.mar {
-    padding-left: 65px;
-}
-
 .images {
     &::after {
         content: "";
@@ -293,6 +289,7 @@ $fs: 26px;
     height: 12px;
     background-color: $fc2;
     outline: none;
+    position: relative;
 }
 
 .set_window .mySlider .slick-dots .slick-active button {
@@ -312,11 +309,31 @@ $fs: 26px;
     line-height: 23px;
     transform-origin: 13px 6px;
     top: calc(50% - 26px);
+    &::after, &::before {
+        content: "";
+        width: 15px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+        top: 18px;
+        left: 5px;
+    }
+    
+    &::before {
+        transform: rotate(90deg);
+        left: -2px;
+        top: 11px;
+    }
+        
     &.slick-arrow-left {
         left: -38px;
     }
     &.slick-arrow-right {
-        right: -49px;
+        right: -40px;
+        transform: rotate(-135deg);
+        top: calc(50% - 16px);
     }
     .arrow-right {
         display: block;
@@ -333,14 +350,11 @@ $fs: 26px;
         
     &:hover {
         background-color: #41ac21;
+        &::after, &::before {
+            background-color: white;
+        }
     }
-        &:hover .arrow-left {
-            color: white;
-        }
         
-        &:hover .arrow-right {
-            color: white;
-        }
     }
 }
 .arrow-slide {
@@ -390,13 +404,19 @@ $fs: 26px;
 }
 
 .image-container {
-    line-height: 184px;
-    width: 100px;
+    width: 190px;
     margin: 0 auto;
+    height: 130px;
 }
 
 .how_to {
     background-image: url(../images/Rectangle%208.png);
+}
+
+.mar {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .head-container {
@@ -421,4 +441,20 @@ $fs: 26px;
     font-size: 14px;
     font-weight: 400;
     color: $fc3;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.space_gray {
+    color: #d0d3d8;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.centr {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
 }

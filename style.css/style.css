@@ -187,9 +187,6 @@
   left: -2px;
   top: -1px; }
 
-.mar {
-  padding-left: 65px; }
-
 .images::after {
   content: "";
   clear: both;
@@ -211,7 +208,8 @@
   width: 12px;
   height: 12px;
   background-color: #43aa26;
-  outline: none; }
+  outline: none;
+  position: relative; }
 
 .set_window .mySlider .slick-dots .slick-active button {
   background-color: white; }
@@ -228,10 +226,26 @@
   line-height: 23px;
   transform-origin: 13px 6px;
   top: calc(50% - 26px); }
+  .set_window .slick-arrow::after, .set_window .slick-arrow::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+    top: 18px;
+    left: 5px; }
+  .set_window .slick-arrow::before {
+    transform: rotate(90deg);
+    left: -2px;
+    top: 11px; }
   .set_window .slick-arrow.slick-arrow-left {
     left: -38px; }
   .set_window .slick-arrow.slick-arrow-right {
-    right: -49px; }
+    right: -40px;
+    transform: rotate(-135deg);
+    top: calc(50% - 16px); }
   .set_window .slick-arrow .arrow-right {
     display: block;
     transform: rotate(-45deg);
@@ -244,10 +258,8 @@
     color: black; }
   .set_window .slick-arrow:hover {
     background-color: #41ac21; }
-  .set_window .slick-arrow:hover .arrow-left {
-    color: white; }
-  .set_window .slick-arrow:hover .arrow-right {
-    color: white; }
+    .set_window .slick-arrow:hover::after, .set_window .slick-arrow:hover::before {
+      background-color: white; }
 
 .description {
   background-color: white;
@@ -276,12 +288,17 @@
     vertical-align: middle; }
 
 .image-container {
-  line-height: 184px;
-  width: 100px;
-  margin: 0 auto; }
+  width: 190px;
+  margin: 0 auto;
+  height: 130px; }
 
 .how_to {
   background-image: url(../images/Rectangle%208.png); }
+
+.mar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 .head-container {
   text-align: center; }
@@ -300,6 +317,20 @@
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #2f3031; }
+  color: #2f3031;
+  margin-top: 25px;
+  text-align: center; }
+
+.space_gray {
+  color: #d0d3d8;
+  font-size: 14px;
+  font-weight: 400; }
+
+.centr {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%; }
 
 /*# sourceMappingURL=style.css.map */
