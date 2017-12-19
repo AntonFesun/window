@@ -5,11 +5,12 @@
     <title>Inside Window</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="slick-1.8.0/slick/slick.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
     <link rel="stylesheet" href="style.css/style.css"> 
-    <script type="text/javascript" src="js/jquery.plugin.js"></script> 
-    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+<!--    <script type="text/javascript" src="js/jquery.plugin.js"></script> -->
+    <link rel="stylesheet" href="timeTo.css">
+
 </head>
 <body>
     <div class="header">
@@ -162,7 +163,7 @@
     </div>
     <div class="sale">
         <div class="container">
-           <div id="defaultCountdown">
+           <div id="#countdown">
            </div>
            <div class="bld_img">
                 <img class="bld" src="images/builders.png" alt="builders">
@@ -291,6 +292,17 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="slick-1.8.0/slick/slick.min.js"></script>
+    <script src="jquery.time-to.min.js"></script>
+    <script>
+        $('#countdown').timeTo({
+            timeTo: new Date(new Date('Tue Dec 26 2017 09:00:00 GMT+0200')),
+            displayDays: 2,
+            theme: "black",
+            displayCaptions: true,
+            fontSize: 48,
+            captionSize: 14
+        });
+    </script>
     <script>
         $(document).ready(function () {
             $('.mySlider').slick({
@@ -348,15 +360,6 @@
             });
         })
     </script>
-    <script>
-        var newYear = new Date(); 
-            newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
-            $('#defaultCountdown').countdown({until: newYear}); 
-            $('#removeCountdown').click(function() { 
-                var destroy = $(this).text() === 'Remove'; 
-                $(this).text(destroy ? 'Re-attach' : 'Remove'); 
-                $('#defaultCountdown').countdown(destroy ? 'destroy' : {until: newYear}); 
-         });
-    </script>
+    
 </body>
 </html>
