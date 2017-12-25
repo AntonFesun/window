@@ -1,5 +1,7 @@
-$ff1: Roboto, sans-serif;
-$ff2: Cuprum, sans-serif;
+$ff1: Roboto,
+sans-serif;
+$ff2: Cuprum,
+sans-serif;
 
 $fc1: #4f555a;
 $fc2: #43aa26;
@@ -21,7 +23,7 @@ $fs: 26px;
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
-    
+
     &::after {
         content: "";
         display: table;
@@ -39,7 +41,7 @@ $fs: 26px;
         display: table;
         clear: both;
     }
-    
+
     span {
         line-height: 87px;
     }
@@ -54,7 +56,7 @@ $fs: 26px;
     font-family: $ff1;
 }
 
-#phone_number {
+.phone_number {
     font-family: $ff2;
     color: $fc3;
     font-size: $fs;
@@ -71,17 +73,17 @@ $fs: 26px;
     font-size: $fs;
     font-family: $ff1;
     line-height: 87px;
-    
+
     img {
         vertical-align: middle;
         line-height: 87px;
     }
 }
 
-#call {
+.call {
     float: right;
     line-height: 87px;
-    
+
     .order {
         line-height: 38px;
         padding-left: 19px;
@@ -121,17 +123,17 @@ $fs: 26px;
         border-left: 1px solid rgba(255, 255, 255, 0.3);
         border-right: 1px solid rgba(255, 255, 255, 0.3);
     }
-    
+
     &:hover {
         background-color: white;
     }
-    
+
     &:last-child {
         &:hover {
             background-color: $but_back;
         }
     }
-    
+
     &:hover .elem {
         color: $fc2;
     }
@@ -151,7 +153,7 @@ $fs: 26px;
     padding-right: 10px;
     padding-left: 10px;
     line-height: 48px;
-    
+
     img {
         vertical-align: middle;
     }
@@ -186,7 +188,7 @@ $fs: 26px;
         font-weight: 400;
         margin-bottom: 19px;
     }
-    
+
     p {
         font-family: $ff1;
         color: $fc3;
@@ -287,75 +289,75 @@ $fs: 26px;
 
 .set_window {
     .slick-arrow {
-    font-size: 25px;
-    border: none;
-    width: 26px;
-    height: 26px;
-    background-color: white;
-    position: absolute;
-    color: #fff;
-    transform: rotate(45deg);
-    line-height: 23px;
-    transform-origin: 13px 6px;
-    top: calc(50% - 26px);
-    &::after, &::before {
-        content: "";
-        width: 15px;
-        height: 2px;
-        background-color: black;
-        position: absolute;
-        top: 18px;
-        left: 5px;
-    }
-    
-    &::before {
-        transform: rotate(90deg);
-        left: -2px;
-        top: 11px;
-    }
-        
-    &.slick-arrow-left {
-        left: -38px;
-    }
-    &.slick-arrow-right {
-        right: -40px;
-        transform: rotate(-135deg);
-        top: calc(50% - 16px);
-    }
-    .arrow-right {
-        display: block;
-        transform: rotate(-45deg);
+        font-size: 25px;
+        border: none;
+        width: 26px;
         height: 26px;
-        color: black;
-    }
-    .arrow-left {
-        display: block;
-        transform: rotate(-45deg);
-        height: 29px;
-        color: black;
-    }
-        
-    &:hover {
-        background-color: #41ac21;
-        &::after, &::before {
-            background-color: white;
+        background-color: white;
+        position: absolute;
+        color: #fff;
+        transform: rotate(45deg);
+        line-height: 23px;
+        transform-origin: 13px 6px;
+        top: calc(50% - 26px);
+        &::after,
+        &::before {
+            content: "";
+            width: 15px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 18px;
+            left: 5px;
         }
-    }
-        
+
+        &::before {
+            transform: rotate(90deg);
+            left: -2px;
+            top: 11px;
+        }
+
+        &.slick-arrow-left {
+            left: -38px;
+        }
+        &.slick-arrow-right {
+            right: -40px;
+            transform: rotate(-135deg);
+            top: calc(50% - 16px);
+        }
+        .arrow-right {
+            display: block;
+            transform: rotate(-45deg);
+            height: 26px;
+            color: black;
+        }
+        .arrow-left {
+            display: block;
+            transform: rotate(-45deg);
+            height: 29px;
+            color: black;
+        }
+
+        &:hover {
+            background-color: #41ac21;
+            &::after,
+            &::before {
+                background-color: white;
+            }
+        }
+
     }
 }
-.arrow-slide {
-    
-}
+
 .set_window .mySlider {
-//    .slick-prevArrow {
-//        &:before {
-//            display: block;
-//            content: "123";
-//            font-size: 14px;
-//            color: black;
-//        }
-//    }
+    //    .slick-prevArrow {
+    //        &:before {
+    //            display: block;
+    //            content: "123";
+    //            font-size: 14px;
+    //            color: black;
+    //        }
+    //    }
 }
 
 .description {
@@ -550,15 +552,15 @@ h2 {
     border-bottom: 2px solid white;
     padding-left: 25px;
     padding-right: 25px;
-    
+
     &:last-child {
         border-right: 2px solid white;
     }
-    
+
     &:hover {
         border-color: $fc2;
     }
-    
+
     &:hover .links-of-catalog {
         color: $fc2;
     }
@@ -580,7 +582,7 @@ h2 {
         display: table;
         clear: both;
     }
-    
+
     p {
         margin: 0 auto;
         font-family: $ff1;
@@ -590,7 +592,7 @@ h2 {
         text-align: center;
         margin-top: 25px;
         margin-bottom: 27px;
-        
+
         span {
             font-family: $ff2;
             font-size: 36px;
@@ -603,19 +605,23 @@ h2 {
     background-color: white;
     padding: 20px 20px 30px 20px;
     margin-right: 21px;
-    
+
     &:last-child {
         margin: 0;
     }
 }
 
+.foto.container {
+    width: 100%;
+}
+
 .foto-three {
     font-size: 0;
     margin-top: 19px;
-    
+
     img {
         margin-right: 18px;
-        
+
         &:last-child {
             margin: 0;
         }
@@ -623,7 +629,7 @@ h2 {
 }
 
 .slick-slide {
-    
+
     img {
         display: inline;
     }
@@ -657,14 +663,15 @@ h2 {
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    
+
     &:hover {
         background-color: white;
         color: $fc2;
     }
 }
 
-.slick-arrow-left-next, .slick-arrow-right-next {
+.slick-arrow-left-next,
+.slick-arrow-right-next {
     cursor: pointer;
     width: 25px;
     height: 25px;
@@ -673,26 +680,28 @@ h2 {
     transform: rotate(45deg);
     position: absolute;
     top: 50%;
-    
-    &::after, &::before {
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    top: 18px;
-    left: 5px;
+
+    &::after,
+    &::before {
+        content: "";
+        width: 15px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        top: 18px;
+        left: 5px;
     }
-    
+
     &::before {
         transform: rotate(90deg);
         left: -2px;
         top: 11px;
     }
-    
+
     &:hover {
-        
-        &::after, &::before {
+
+        &::after,
+        &::before {
             background-color: $fc2;
         }
     }
@@ -740,7 +749,7 @@ h2 {
 .delivery {
     background-color: white;
     padding-bottom: 11px;
-    
+
     a {
         text-align: center;
     }
@@ -778,7 +787,7 @@ h2 {
     background-image: url(../images/information.png);
     width: 63px;
     height: 63px;
-    
+
     &:hover .inform {
         display: block;
     }
@@ -816,12 +825,21 @@ h2 {
     left: 288px;
 }
 
+.last-des-container {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+
 .last-des {
     background-color: #fff;
     float: left;
     width: 690px;
     padding: 30px 19px 30px 30px;
-    
+
     &::after {
         content: "";
         display: table;
@@ -840,7 +858,7 @@ h2 {
     width: 299px;
     img {
         margin-right: 14px;
-        
+
         &:last-child {
             margin-right: 0px;
         }
@@ -872,7 +890,8 @@ h2 {
     text-align: left;
 }
 
-.slick-arrow-left-last, .slick-arrow-right-last {
+.slick-arrow-left-last,
+.slick-arrow-right-last {
     cursor: pointer;
     width: 25px;
     height: 25px;
@@ -881,26 +900,28 @@ h2 {
     transform: rotate(45deg);
     position: absolute;
     top: 30%;
-    
-    &::after, &::before {
-    content: "";
-    width: 15px;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    top: 18px;
-    left: 5px;
+
+    &::after,
+    &::before {
+        content: "";
+        width: 15px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        top: 18px;
+        left: 5px;
     }
-    
+
     &::before {
         transform: rotate(90deg);
         left: -2px;
         top: 11px;
     }
-    
+
     &:hover {
-        
-        &::after, &::before {
+
+        &::after,
+        &::before {
             background-color: $fc2;
         }
     }
@@ -920,7 +941,7 @@ h2 {
     margin-top: 19px;
     padding-top: 30px;
     padding-bottom: 30px;
-    
+
     .calc {
         margin-top: 29px;
         font-size: 18px;
@@ -955,9 +976,9 @@ h2 {
     width: 100%;
     height: 520px;
     position: relative;
-	bottom: 0;
-	left: 0;
-	z-index: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
 }
 
 .bold {
@@ -968,36 +989,292 @@ h2 {
     position: relative;
     z-index: 1;
     width: 450px;
-    margin: -107px auto 0;
+    margin: -330px auto 0;
     background-color: #fff;
-    
+    position: absolute;
+    right: 0;
+
     .rows {
-        line-height: 107px;
         text-align: center;
         border-bottom: 1px solid rgb(230, 230, 230);
+
+        &::after {
+            display: table;
+            content: "";
+            clear: both;
+        }
     }
+}
+
+.rows-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    text-align: left;
+    margin: 21px auto;
+    margin-left: 21px;
 }
 
 .rows-list {
     list-style-type: none;
+    width: 33%;
+    margin-bottom: 5px;
+
+
+
     a {
         font-family: $fc1;
         color: $fc3;
         font-size: 14px;
         font-weight: 400;
-        line-height: 22px;
-        text-align: left;
         text-decoration: none;
         display: block;
+
+        &:hover {
+            color: $fc2;
+            text-decoration-line: underline;
+        }
     }
 }
 
+.rows-menu-list {
+    padding: 21px 0 21px 21px;
+}
 
+.rows_phone_number {
+    font-family: $ff2;
+    color: $fc3;
+    font-size: $fs;
+    line-height: 88px;
+}
 
+.form-call {
+    float: right;
+    line-height: 88px;
 
+    .rows-order {
+        line-height: 38px;
+        padding-left: 19px;
+        padding-right: 18px;
+        border: none;
+        border-bottom: 3px solid #288b0a;
+        background-color: $but_back;
+        color: $col1;
+        cursor: pointer;
+        margin-right: 20px;
 
+        img {
+            vertical-align: middle;
+            margin-right: 9px;
+        }
+    }
+}
 
+@media screen and (max-width: 1024px) {
 
+    .firm_name {
+        float: none;
+        text-align: center;
+    }
+
+    #describe {
+        display: block;
+        text-align: center;
+        margin: 0
+    }
+
+    .phone_number {
+        display: block;
+        text-align: center;
+    }
+    
+    .menu-list {
+        display: block;
+        overflow: visible;
+    }
+
+    .call {
+        float: none;
+        text-align: center;
+    }
+
+    .set {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .foto {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .description {
+        margin: 0 auto;
+        top: 0;
+    }
+    
+    .foto-one {
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    .foto-three {
+        img {
+            display: block;
+            margin: 5px auto;
+            
+            &:last-child {
+                margin: 5px auto;
+            }
+        }
+    }
+    
+    .list-of-catalog {
+        max-width: 664px;
+    }
+    
+    .slick-arrow-left-next {
+        left: -18px;
+    }
+    
+    .slick-arrow-right-next {
+        right: 3px;
+    }
+    
+    .calc {
+        padding: 12px 8px 13px 14px;
+    }
+    
+    .last-des {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .delivery-price {
+        float: none;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calc {
+        padding: 12px 10px;
+        font-size: 12px;
+    }
+    
+    .last-des {
+        padding: 0;
+        padding-top: 10px;
+        
+        .ft {
+            float: none;
+            margin: 0 auto;
+        }
+        
+        .head_text_of_foto {
+            margin: 10px auto;
+        }
+        
+        .head_practice {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .right_text_of_foto {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 667px) {
+    
+    .img {
+        display: none;
+    }
+    
+    .elements-of-list {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .foto-one {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .set_window {
+        padding: 10px;
+        width: 344px;
+    }
+    
+    .set_window .slick-arrow.slick-arrow-left {
+        left: -18px;
+    }
+    
+    .set_window .slick-arrow.slick-arrow-right {
+        right: -18px;
+    }
+    
+    .convert {
+        float: none;
+    }
+
+    .elements-of-list {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    
+    .set_window {
+        display: none;
+    }
+    
+    .foto {
+        width: 100%;
+    }
+    
+    .description {
+        top: 0;
+    }
+    
+    .bld_img {
+        margin: 0;
+    }
+    
+    .bld {
+        width: 100vw;
+    }
+    
+    .list-of-catalog {
+        display: block;
+        background-color: inherit;
+    }      
+    
+    .elements-of-list {
+        background-color: #fff;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .delivery-price {
+        width: auto;
+    }
+    
+    .form {
+        width: auto;
+        margin: 0;
+    }
+}
 
 
 

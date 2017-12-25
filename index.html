@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css/style.css"> 
 <!--    <script type="text/javascript" src="js/jquery.plugin.js"></script> -->
     <link rel="stylesheet" href="timeTo.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="header">
@@ -23,8 +23,8 @@
                     </a>
                 </h4>
                 <span id="describe">Окна от <b>лучших</b> производителей мира</span>
-                <span id="phone_number">+ 38 (044) 812-23-12</span>
-                <form action="" id="call">
+                <span class="phone_number">+ 38 (044) 812-23-12</span>
+                <form action="" class="call">
                     <button class="order"><img src="images/phone-call%20(1).png" alt="phone">ЗАКАЗАТЬ ЗВОНОК</button>
                 </form>
             </div>
@@ -314,27 +314,34 @@
         </div>
     </div>
     <div id="map"></div>
-    <div class="form">
-        <div class="rows">
-            <a href="#" class="inside-window bold">
-                <img src="images/clean-window-glass%20(1).png" alt="clean_window">
-                INSIDE WINDOW
-            </a>
+    <div class="container">
+        <div class="form">
+            <div class="rows logotype">
+                <a href="#" class="inside-window bold">
+                    <img src="images/clean-window-glass%20(1).png" alt="clean_window">
+                    INSIDE WINDOW
+                </a>
+            </div>
+            <div class="rows rows-menu-list">
+                <ul class="rows-menu">
+                    <li class="rows-list"><a href="#">Главная</a></li>
+                    <li class="rows-list"><a href="#">Продукция</a></li>
+                    <li class="rows-list"><a href="#">Наши услуги</a></li>
+                    <li class="rows-list"><a href="#">Кредит</a></li>
+                    <li class="rows-list"><a href="#">Акции</a></li>
+                    <li class="rows-list"><a href="#">Новости</a></li>
+                    <li class="rows-list"><a href="#">Доставка</a></li>
+                    <li class="rows-list"><a href="#">Оплата</a></li>
+                    <li class="rows-list"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="rows button-call">
+                <span class="rows_phone_number">+ 38 (044) 812-23-12</span>
+                <form action="" class="form-call">
+                    <button class="rows-order"><img src="images/phone-call%20(1).png" alt="phone">ЗАКАЗАТЬ ЗВОНОК</button>
+                </form>
+            </div>
         </div>
-        <div class="rows">
-            <ul class="rows-menu">
-                <li class="rows-list"><a href="#">Главная</a></li>
-                <li class="rows-list"><a href="#">Продукция</a></li>
-                <li class="rows-list"><a href="#">Наш услуги</a></li>
-                <li class="rows-list"><a href="#">Кредит</a></li>
-                <li class="rows-list"><a href="#">Акции</a></li>
-                <li class="rows-list"><a href="#">Новости</a></li>
-                <li class="rows-list"><a href="#">Доставка</a></li>
-                <li class="rows-list"><a href="#">Оплата</a></li>
-                <li class="rows-list"><a href="#">Контакты</a></li>
-            </ul>
-        </div>
-        <div class="rows"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="slick-1.8.0/slick/slick.min.js"></script>
